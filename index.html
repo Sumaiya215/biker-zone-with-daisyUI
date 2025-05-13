@@ -23,6 +23,7 @@
       .font-poppins {
         font-family: 'Poppins', sans-serif;
       }
+      
     </style>
     <script>
       tailwind.config = {
@@ -40,9 +41,9 @@
   </head>
   <body class="font-poppins">
     <!-- Header Section -->
-    <header class="md:container mx-auto">
+    <header class="md:container mx-auto ">
       <nav>
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 mb-4">
           <div class="flex-1">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -63,7 +64,7 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-medium"
               >
                 <li><a>Home</a></li>
                 <li><a>Shop</a></li>
@@ -74,14 +75,14 @@
             <a class="font-bold text-xl">Biker Zone</a>
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+            <ul class="menu menu-horizontal px-1 font-medium">
               <li><a>Home</a></li>
               <li><a>Shop</a></li>
               <li><a>News</a></li>
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <div class="">
+          <div class=" mt-2">
             <a class="btn bg-bike-primary text-white">Login</a>
           </div>
         </div>
@@ -175,7 +176,6 @@
 
     <!-- Main Section -->
     <main class="md:container mx-auto">
-      <!-- featured bike section - Homework -->
       <section class="my-24 text-center">
         <div class="text-center">
         <h3 class="text-5xl font-bold w-3/4 mx-auto lg:w-full mb-4">Featured Bikes In This Year</h3>
@@ -250,7 +250,7 @@
         </div>
       </section>
 
-      <!-- Happy Clients Happy Homework -->
+      
       <section class="my-24" >
         <h3 class="text-5xl font-bold text-center mb-24">Happy <span class="text-bike-primary">Clients says</span></h3>
         <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
@@ -336,7 +336,7 @@
           <div class="hero-content flex-col lg:flex-row">
             <img
               src="./images/others/faq.png"
-              class="w-full rounded-lg shadow-2xl"
+              class="w-3/4 rounded-lg shadow-2xl"
             />
             <div class="space-y-5">
               <div class="collapse collapse-arrow border border-blue-100">
@@ -409,13 +409,22 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="footer bg-black text-neutral-content p-10">
-      <aside>
-        <p>
-          ACME Industries Ltd.
-          <br />
-          Providing reliable tech since 1992
-        </p>
+    <footer class="flex justify-between items-center bg-black text-neutral-content py-16 px-20 mb-6">
+      <div>
+          <div class="flex gap-4">
+            <p>Download Now</p>
+            <p>License</p>
+          </div>   
+          <div class="mt-4 flex gap-4">
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Careers</a>
+            <a href="#">Help</a>
+            <a href="#">Privacy Policy</a>
+          </div>  
+          <p class="text-sm opacity-60 mt-4">© 2020 bike. All rights reserved</p>
+          </div>   
       </aside>
       <nav>
         <h6 class="footer-title">Get The App</h6>
@@ -424,6 +433,7 @@
           <a> <img class="w-36" src="./images/others/ios.png" alt="" /> </a>
         </div>
       </nav>
+      
     </footer>
   </body>
 </html>
